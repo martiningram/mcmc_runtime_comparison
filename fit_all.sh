@@ -1,5 +1,5 @@
 # Modify as desired; will be created if it does not exist
-target_dir="/media/martin/big_extra_space/pymc_vs_stan/non_centred/fits"
+target_dir="/media/martin/big_extra_space/pymc_vs_stan/non_centred_rerun/fits"
 
 for start_year in 2020 2019 2015 2010 2000 1990 1980 1968; do
     echo "Fitting $start_year"

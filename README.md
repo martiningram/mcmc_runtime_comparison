@@ -1,3 +1,7 @@
+### Caveats
+
+Please note: this benchmark is not quite done yet, and things may change a bit.
+
 ### Setup notes
 
 This benchmark uses Jeff Sackmann's tennis data. You can obtain it as follows:
