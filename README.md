@@ -16,3 +16,13 @@ Here are the steps I followed to setup PyMC v4:
   latest version of JAX. I ended up installing jax v0.2.13 and jaxlib v0.1.65.
 * I installed numpyro v0.8.0.
 * I installed aeppl version 0.0.17.
+
+### How to run
+
+It's easiest to run the benchmarks using the `fit_all.sh` script. Make sure to
+first edit the `target_dir` variable in it and amend it to a directory that
+makes sense for you. All the model runs will be stored in it under
+subdirectories.
+
+Once benchmarks have been run, you can analyse the results and make plots using
+the `Compare_runtimes.ipynb` notebook.
