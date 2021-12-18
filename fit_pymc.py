@@ -15,7 +15,10 @@ start_time = time()
 
 with model:
     hierarchical_trace = pm.sample(
-        1000, tune=1000, return_inferencedata=True, compute_convergence_checks=False
+        1000,
+        tune=1000,
+        return_inferencedata=True,
+        compute_convergence_checks=False,
     )
 
 runtime = time() - start_time

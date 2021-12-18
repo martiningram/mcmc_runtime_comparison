@@ -30,7 +30,7 @@ stan_data = {
 model = CmdStanModel(stan_file="stan_model_optimised.stan")
 model.compile()
 
-fit = model.sample(data=stan_data)
+fit = model.sample(data=stan_data, parallel_chains=4)
 
 runtime = time() - start_time
 
