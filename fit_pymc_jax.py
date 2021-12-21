@@ -9,6 +9,7 @@ start_year = int(sys.argv[1])
 platform = sys.argv[2]
 chain_method = sys.argv[3]
 base_dir = sys.argv[4]
+seed = int(sys.argv[5])
 
 assert platform in ["cpu", "gpu"]
 
@@ -26,7 +27,7 @@ start_time = time()
 
 with model:
     hierarchical_trace = pymc.sampling_jax.sample_numpyro_nuts(
-        chain_method=chain_method
+        chain_method=chain_method, random_seed=seed
     )
 
 runtime = time() - start_time

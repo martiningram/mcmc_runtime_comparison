@@ -6,6 +6,7 @@ import pymc as pm
 
 start_year = int(sys.argv[1])
 target_dir = sys.argv[2] + "/pymc"
+seed = int(sys.argv[3])
 
 os.makedirs(target_dir, exist_ok=True)
 
@@ -19,6 +20,7 @@ with model:
         tune=1000,
         return_inferencedata=True,
         compute_convergence_checks=False,
+        random_seed=seed,
     )
 
 runtime = time() - start_time

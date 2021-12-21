@@ -9,6 +9,7 @@ from cmdstanpy import CmdStanModel
 
 start_year = int(sys.argv[1])
 target_dir = sys.argv[2] + "/cmdstanpy"
+seed = int(sys.argv[3])
 
 os.makedirs(target_dir, exist_ok=True)
 
@@ -30,7 +31,7 @@ stan_data = {
 model = CmdStanModel(stan_file="stan_model_optimised.stan")
 model.compile()
 
-fit = model.sample(data=stan_data, parallel_chains=4)
+fit = model.sample(data=stan_data, parallel_chains=4, seed=seed)
 
 runtime = time() - start_time
 
