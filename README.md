@@ -40,3 +40,5 @@ subdirectories.
 
 Once benchmarks have been run, you can analyse the results and make plots using
 the `Compare_runtimes.ipynb` notebook.
+
+If you run into any problems, please raise an issue!
