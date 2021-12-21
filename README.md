@@ -1,6 +1,10 @@
-### Caveats
+# MCMC benchmarks
 
-Please note: this benchmark is not quite done yet, and things may change a bit.
+![ESS](images/ess_values.png)
+
+This code compares Stan, PyMC, and PyMC + JAX numpyro sampler on a model for
+tennis. It accompanies the blog post available
+[here](https://martiningram.github.io/mcmc-comparison/).
 
 ### Setup notes
 
