@@ -13,7 +13,10 @@ git clone https://github.com/JeffSackmann/tennis_atp.git
 cd tennis_atp && git checkout 89c20f1ef56f69db1b73b5782671ee85203b068a
 ```
 
-Here are the steps I followed to setup PyMC v4 with JAX support:
+Requirements that can be installed using pip are listed in
+`requirements.txt`. Please install these first.
+
+Once these are done, here are the steps I followed to setup PyMC v4 with JAX support:
 
 * PyMC v4 installed using the instructions here: https://github.com/pymc-devs/pymc/wiki/Installation-Guide-(Linux)#pymc-v4-installation
 * I am running an older version of CUDA (CUDA 10.1), so I couldn't use the

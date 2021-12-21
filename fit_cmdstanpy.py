@@ -2,7 +2,6 @@ import sys
 import os
 from fetch_data import create_arrays
 from time import time
-import stan
 import numpy as np
 import arviz as az
 from cmdstanpy import CmdStanModel
