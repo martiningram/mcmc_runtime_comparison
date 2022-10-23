@@ -23,10 +23,7 @@ Requirements that can be installed using pip are listed in
 Once these are done, here are the steps I followed to setup PyMC v4 with JAX support:
 
 * PyMC v4 installed using the instructions here: https://github.com/pymc-devs/pymc/wiki/Installation-Guide-(Linux)#pymc-v4-installation
-* I am running an older version of CUDA (CUDA 10.1), so I couldn't use the
-  latest version of JAX. I ended up installing jax v0.2.13 and jaxlib v0.1.65.
-* I installed numpyro v0.8.0.
-* I installed aeppl version 0.0.17.
+* `blackjax` and `numpyro` were also installed using those instructions.
 
 To run the Stan code, it's best to install `cmdstanpy`. Instructions for
 installing it can be found [here](https://mc-stan.org/cmdstanpy/installation.html).

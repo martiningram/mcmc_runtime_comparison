@@ -17,7 +17,7 @@ if platform == "cpu":
     # Disable GPU
     os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
-target_dir = f"{base_dir}/pymc_jax_{platform}_{chain_method}"
+target_dir = f"{base_dir}/pymc_numpyro_{platform}_{chain_method}"
 
 os.makedirs(target_dir, exist_ok=True)
 
@@ -27,7 +27,8 @@ start_time = time()
 
 with model:
     hierarchical_trace = pymc.sampling_jax.sample_numpyro_nuts(
-        chain_method=chain_method, random_seed=seed
+        chain_method=chain_method, random_seed=seed,
+        idata_kwargs={'log_likelihood': False}
     )
 
 runtime = time() - start_time
